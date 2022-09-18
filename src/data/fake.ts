@@ -33,8 +33,8 @@ const albums = [
     releaseDate: "2021",
     itemType: "Album",
     image: "https://i.scdn.co/image/ab67616d0000b2739e65f9335123d993958f97e6",
-  }
-]
+  },
+];
 
 const playlists = [
   {
@@ -57,10 +57,10 @@ const playlists = [
   },
   {
     title: "Dance Brandneu",
-    description: "Die heißesten neuen Dance Tracks in einer Playlist. Cover: Ray Dalton, Felix Jaehn",
+    description:
+      "Die heißesten neuen Dance Tracks in einer Playlist. Cover: Ray Dalton, Felix Jaehn",
     itemType: "Playlist",
     image: "https://i.scdn.co/image/ab67706f0000000312b21f64dc58a7f057ecea04",
-
   },
   {
     title: "Sommerhits 2022",
@@ -85,38 +85,40 @@ const playlists = [
     description: "Just lean back and enjoy these relaxed beats.",
     itemType: "Playlist",
     image: "https://i.scdn.co/image/ab67706f00000003dec17246891b5b4eb97bdb0d",
-  }
-]
+  },
+];
 
 const categories = [
   {
     title: "Top Lists",
-    image: "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
+    image:
+      "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
   },
   {
     title: "Pop",
-    image: "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg",
+    image:
+      "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg",
   },
   {
     title: "Hip-Hop",
-    image: "https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg",
+    image:
+      "https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg",
   },
   {
     title: "Mood",
-    image: "https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg",
+    image:
+      "https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg",
   },
   {
     title: "Dance/Electronic",
-    image: "https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg",
+    image:
+      "https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg",
   },
   {
     title: "Rock",
-    image: "https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg",
-  }
-]
+    image:
+      "https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg",
+  },
+];
 
-export {
-  albums,
-  playlists,
-  categories,
-}
+export { albums, playlists, categories };

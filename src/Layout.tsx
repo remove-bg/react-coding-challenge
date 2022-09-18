@@ -1,36 +1,40 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
+import { Fragment, useState } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   HomeIcon,
   XMarkIcon,
   MagnifyingGlassIcon,
-  BookmarkIcon
-} from '@heroicons/react/24/outline'
+  BookmarkIcon,
+} from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'Home', href: '#', icon: HomeIcon, current: true },
-  { name: 'Search', href: '#', icon: MagnifyingGlassIcon, current: false },
-  { name: 'Your Library', href: '#', icon: BookmarkIcon, current: false },
-]
+  { name: "Home", href: "#", icon: HomeIcon, current: true },
+  { name: "Search", href: "#", icon: MagnifyingGlassIcon, current: false },
+  { name: "Your Library", href: "#", icon: BookmarkIcon, current: false },
+];
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 type LayoutProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 export default function Layout({ children }: LayoutProps) {
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <>
       <div>
         <Transition.Root show={sidebarOpen} as={Fragment}>
-          <Dialog as="div" className="relative z-40 md:hidden" onClose={setSidebarOpen}>
+          <Dialog
+            as="div"
+            className="relative z-40 md:hidden"
+            onClose={setSidebarOpen}
+          >
             <Transition.Child
               as={Fragment}
               enter="transition-opacity ease-linear duration-300"
@@ -70,7 +74,10 @@ export default function Layout({ children }: LayoutProps) {
                         onClick={() => setSidebarOpen(false)}
                       >
                         <span className="sr-only">Close sidebar</span>
-                        <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                        <XMarkIcon
+                          className="h-6 w-6 text-white"
+                          aria-hidden="true"
+                        />
                       </button>
                     </div>
                   </Transition.Child>
@@ -82,15 +89,17 @@ export default function Layout({ children }: LayoutProps) {
                           href={item.href}
                           className={classNames(
                             item.current
-                              ? 'bg-gray-900 text-white'
-                              : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                            'group flex items-center px-2 py-2 text-base font-medium rounded-md'
+                              ? "bg-gray-900 text-white"
+                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            "group flex items-center px-2 py-2 text-base font-medium rounded-md"
                           )}
                         >
                           <item.icon
                             className={classNames(
-                              item.current ? 'text-gray-300' : 'text-gray-400 group-hover:text-gray-300',
-                              'mr-4 flex-shrink-0 h-6 w-6'
+                              item.current
+                                ? "text-gray-300"
+                                : "text-gray-400 group-hover:text-gray-300",
+                              "mr-4 flex-shrink-0 h-6 w-6"
                             )}
                             aria-hidden="true"
                           />
@@ -110,15 +119,21 @@ export default function Layout({ children }: LayoutProps) {
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="text-base font-medium text-white">Tom Cook</p>
-                          <p className="text-sm font-medium text-gray-400 group-hover:text-gray-300">View profile</p>
+                          <p className="text-base font-medium text-white">
+                            Tom Cook
+                          </p>
+                          <p className="text-sm font-medium text-gray-400 group-hover:text-gray-300">
+                            View profile
+                          </p>
                         </div>
                       </div>
                     </a>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
-              <div className="w-14 flex-shrink-0">{/* Force sidebar to shrink to fit close icon */}</div>
+              <div className="w-14 flex-shrink-0">
+                {/* Force sidebar to shrink to fit close icon */}
+              </div>
             </div>
           </Dialog>
         </Transition.Root>
@@ -134,14 +149,18 @@ export default function Layout({ children }: LayoutProps) {
                     key={item.name}
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
+                      item.current
+                        ? "bg-gray-900 text-white"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                     )}
                   >
                     <item.icon
                       className={classNames(
-                        item.current ? 'text-gray-300' : 'text-gray-400 group-hover:text-gray-300',
-                        'mr-3 flex-shrink-0 h-6 w-6'
+                        item.current
+                          ? "text-gray-300"
+                          : "text-gray-400 group-hover:text-gray-300",
+                        "mr-3 flex-shrink-0 h-6 w-6"
                       )}
                       aria-hidden="true"
                     />
@@ -162,7 +181,9 @@ export default function Layout({ children }: LayoutProps) {
                   </div>
                   <div className="ml-3">
                     <p className="text-sm font-medium text-white">Tom Cook</p>
-                    <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">View profile</p>
+                    <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">
+                      View profile
+                    </p>
                   </div>
                 </div>
               </a>
@@ -184,9 +205,7 @@ export default function Layout({ children }: LayoutProps) {
             <div className="py-6">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
                 {/* Replace with your content */}
-                <div className="py-4">
-                  {children}
-                </div>
+                <div className="py-4">{children}</div>
                 {/* /End replace */}
               </div>
             </div>
@@ -194,5 +213,5 @@ export default function Layout({ children }: LayoutProps) {
         </div>
       </div>
     </>
-  )
+  );
 }
