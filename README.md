@@ -1,7 +1,7 @@
 # React coding challenge
 
 ## 💻 Setup
-- install [Git](https://git-scm.com)
+- Install [Git](https://git-scm.com)
 - Install [Node.js 16.17.0](https://nodejs.org)
 - Install [Yarn 1.12.19](https://classic.yarnpkg.com/en/docs/install)
 - Pull the repository
