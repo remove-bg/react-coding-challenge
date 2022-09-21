@@ -7,6 +7,7 @@
 - Pull the repository
 - Run `yarn install`
 - Run `yarn test`
+- Start the local dev server with `yarn dev`
 
 ## 💡 Synopsis
 
