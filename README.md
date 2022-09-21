@@ -1,5 +1,13 @@
 # React coding challenge
 
+## 💻 Setup
+- install [Git](https://git-scm.com)
+- Install [Node.js 16.17.0](https://nodejs.org)
+- Install [Yarn 1.12.19](https://classic.yarnpkg.com/en/docs/install)
+- Pull the repository
+- Run `yarn install`
+- Run `yarn test`
+
 ## 💡 Synopsis
 
 We want to create a custom Spotify interface that will be mounted to the wall in the office gaming room. It will be permanentely connected to the Kaleido Spotify account and display the newest releases and featured playlists the users can select to start the music in this room.
