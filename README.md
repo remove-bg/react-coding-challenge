@@ -2,7 +2,7 @@
 
 ## 💡 Synopsis
 
-TODO: Write a short description of the project.
+We want to create a custom Spotify interface that will be mounted to the wall in the office gaming room. It will be permanentely connected to the Kaleido Spotify account and display the newest releases and featured playlists the users can select to start the music in this room.
 
 ## 🚀 Getting started
 
@@ -12,9 +12,9 @@ TODO: Write a short description of the project.
 
 ## 📖 Requirements
 
-- Fetch and display albums released this week (`/browse/new-releases`)
-- Fetch and display featured playlists (`/browse/featured-playlists`)
-- Fetch and display featured categories (`/browse/categories`)
+- Fetch and display albums released this week
+- Fetch and display featured playlists
+- Fetch and display featured categories
 
 ## 📎 References
 
