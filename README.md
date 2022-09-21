@@ -14,7 +14,8 @@ We want to create a custom Spotify interface that will be mounted to the wall in
 
 ## 🚀 Getting started
 
-- All required API endpoints and credentials can be found in `src/config.ts`
+- Run all the Setup steps
+- All required API endpoints and credentials can be found in `src/config.ts`.
 - You may use any libraries you want, but please don't use any already existing spotify client libraries.
 - Feel free to reorganize the project structure as you see fit.
 
