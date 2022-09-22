@@ -29,6 +29,7 @@ We want to create a custom Spotify interface that will be mounted to the wall in
 
 ## ❌ Non-requirements
 
+- Server-side API calls
 - SSR
 - SEO
 
