@@ -1,6 +1,7 @@
 # React coding challenge
 
 ## 💻 Setup
+
 - Install [Git](https://git-scm.com)
 - Install [Node.js 16.17.0](https://nodejs.org)
 - Install [Yarn 1.12.19](https://classic.yarnpkg.com/en/docs/install)
@@ -25,6 +26,11 @@ We want to create a custom Spotify interface that will be mounted to the wall in
 - Fetch and display albums released this week
 - Fetch and display featured playlists
 - Fetch and display featured categories
+
+## ❌ Non-requirements
+
+- SSR
+- SEO
 
 ## 📎 References
 
