@@ -35,7 +35,8 @@ We want to create a custom Spotify interface that will be mounted to the wall in
 
 ## 📎 References
 
-- [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
+- [Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization/client-credentials/)
+- [API Reference](https://developer.spotify.com/documentation/web-api/reference/#/)
 
 ## 🖼️ Screenshot
 

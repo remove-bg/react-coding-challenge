@@ -1,4 +1,4 @@
-type ItemProps = {
+export type ItemProps = {
   title: string;
   image: string;
   description?: string;

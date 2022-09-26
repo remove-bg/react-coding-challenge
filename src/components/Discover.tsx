@@ -1,4 +1,4 @@
-type DiscoverProps = {
+export type DiscoverProps = {
   name: string;
   children: React.ReactNode;
 };
